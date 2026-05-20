@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RWIV</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css')}}"/>
+    </head>
+    <body>
+        <pre class="ascii">
+ _____   ____   _____  __          __  _       _____                             __      ___                
+|  __ \ / __ \ / ____| \ \        / / | |     |_   _|                            \ \    / (_)               
+| |__) | |  | | (___    \ \  /\  / /__| |__     | |  _ __ ___   __ _  __ _  ___   \ \  / / _  _____      __ 
+|  _  /| |  | |\___ \    \ \/  \/ / _ \ '_ \    | | | '_ ` _ \ / _` |/ _` |/ _ \   \ \/ / | |/ _ \ \ /\ / /
+| | \ \| |__| |____) |    \  /\  /  __/ |_) |  _| |_| | | | | | (_| | (_| |  __/    \  /  | |  __/\ V  V / 
+|_|  \_\\____/|_____/      \/  \/ \___|_.__/  |_____|_| |_| |_|\__,_|\__, |\___|     \/   |_|\___| \_/\_/  
+                                                                      __/ |                                
+                                                                     |___/                                                              
+        </pre>
+        <img id="view" src="/video_feed"/>
+        <pre id="meta"></pre>
+        <script src="{{ url_for('static', filename='js/meta.js') }}"></script>
+    </body>
+</html>

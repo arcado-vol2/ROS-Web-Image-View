@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_web_image_view</name>
+  <version>1.0.0</version>
+  <description>Simple ROS Web Image View</description>
+  <maintainer email="piterz31a@gmail.com">arcado</maintainer>
+  <license>BSD-2</license>
+  <url type="website">https://github.com/arcado-vol2/ROS-Web-Image-View</url>
+  <author email="piterz31a@gmail.com">Peter Gulia</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>catkin_pkg</build_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <export>
+  </export>
+</package>

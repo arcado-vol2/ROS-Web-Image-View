@@ -8,5 +8,5 @@ async function updateMetaData() {
     }
 }
 
-setInterval(updateMetaData, 500);
+setInterval(updateMetaData, 50);
 updateMetaData();

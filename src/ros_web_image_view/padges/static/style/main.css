@@ -1,22 +1,52 @@
 .ascii {
     font-family: monospace;
-    white-space: pre;
     font-size: 12px;
     line-height: 1;
-    overflow: auto;
+    overflow: auto; 
+    margin: 0;
+}
+
+#header {
     padding: 1rem 1rem 0 1rem;
-    
-    
 }
 
 body {
     background-color: black;
     color: white;
     margin: 0;
-    padding-left: 3rem;
+    padding-left: 1rem;
+}
+
+.content {
+    margin-left: 2rem;
 }
 
 #view {
     width: 300;
-    
+}
+
+
+#top-border, #bottom-border {
+    margin: 0;
+    white-space: pre;
+    text-align: left;
+}
+
+#middle-border {
+    display: flex;
+    align-items: stretch;
+}
+
+#left-border, #right-border {
+    margin: 0;
+    white-space: pre;
+}
+
+.ascii img {
+    display: block;
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 7px;
+    border: none;
 }

@@ -22,14 +22,17 @@ class Config(metaclass=_ConfigMeta):
         self.WEB_host: str = "0.0.0.0"
         self.WEB_port: int = 8080
         self.JPEG_quality: int = 80
+        self.sleep_dt = 0.005
     
     def read_data(self, namespace="~"):
         '''
         Reads ros config into itself
         '''
-        self.ROS_topic = rospy.get_param("ROS_topic", "/cam/image_raw")
+        self.ROS_topic = rospy.get_param("ROS_topic", "/usb_cam/image_raw")
         self.WEB_host = rospy.get_param("WEB_host", "0.0.0.0")
-        self.WEB_port = rospy.get_param("WEB_port", 8000)
+        self.WEB_port = rospy.get_param("WEB_port", 8080)
         self.JPEG_quality = rospy.get_param("JPEG_quality", 80)
+        self.sleep_dt = round(1 / rospy.get_param("max_framerate", 30) / 2, 4)
+
 
         

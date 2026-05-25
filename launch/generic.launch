@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
   <node name="rwiv" pkg="ros_web_image_view" type="rwiv_node.py" output="screen"> 
-    <rosparam file="$(find ros_web_image_view)/config/usb_cam.yaml" command="load" />
+    <rosparam file="$(find ros_web_image_view)/config/generic.yaml" command="load" />
   </node>
 </launch> 

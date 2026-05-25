@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-  <node name="RWIV general" pkg="ros_web_image_view" type="RWIV.py" output="screen"> 
-    <rosparam file="$(find ros_web_image_view)/config/main.yaml" command="load" />
-  </node>
-</launch> 

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css')}}"/>
     </head>
     <body>
-        <pre class="ascii">
+        <pre class="ascii", id="header">
  _____   ____   _____  __          __  _       _____                             __      ___                
 |  __ \ / __ \ / ____| \ \        / / | |     |_   _|                            \ \    / (_)               
 | |__) | |  | | (___    \ \  /\  / /__| |__     | |  _ __ ___   __ _  __ _  ___   \ \  / / _  _____      __ 
@@ -16,8 +16,21 @@
                                                                       __/ |                                
                                                                      |___/                                                              
         </pre>
-        <img id="view" src="/video_feed"/>
-        <pre id="meta"></pre>
+        
+        <div class="ascii content">
+            <pre id="top-border">+------------------------------------+</pre>
+            <div id="middle-border">
+                <pre id="left-border">|</pre>
+                <img id="view" src="/video_feed"/>
+                <pre id="right-border">|</pre>
+            </div>
+            <pre id="bottom-border">+------------------------------------+</pre>
+            
+        </div>
+
+        
+        <pre class="content" id="meta"></pre>
         <script src="{{ url_for('static', filename='js/meta.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/border.js') }}"></script>
     </body>
 </html>

@@ -132,7 +132,7 @@ def flask_thread(streamer: Streamer):
         port=streamer.config.WEB_port,
         threaded=True,
         use_reloader=False,
-        debug=True
+        debug=False
     )
 
 def main():

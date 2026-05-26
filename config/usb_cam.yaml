@@ -2,3 +2,4 @@ ROS_topic: "/usb_cam/image_raw"
 WEB_host: "0.0.0.0"
 WEB_port: 8080
 JPEG_quality: 80 # How much your view stream will be compressed
+max_framerate: 30

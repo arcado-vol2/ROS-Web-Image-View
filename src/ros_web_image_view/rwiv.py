@@ -136,10 +136,11 @@ def flask_thread(streamer: Streamer):
     )
 
 def main():
+    rospy.init_node('RWIV', anonymous=True)
+
     config = Config()
     config.read_data()
 
-    rospy.init_node('RWIV', anonymous=True)
     streamer = Streamer(config)
 
     threading.Thread(target=flask_thread, args=(streamer,) , daemon=True, name="flask server").start()
